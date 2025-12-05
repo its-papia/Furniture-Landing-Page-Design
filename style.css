@@ -220,13 +220,13 @@ input[type="text"]::placeholder {
 .more_info a{
     text-decoration: none;
     color: #E58411;
-    font-size: 14px;
+    font-size: 18px;
     line-break: 185%;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .more_info i{
-    font-size: 24px;
+    font-size: 20px;
     color: #E58411;
 }
 
@@ -240,6 +240,9 @@ input[type="text"]::placeholder {
 .best_product .container{
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header{
@@ -295,6 +298,7 @@ input[type="text"]::placeholder {
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 42px;
+    margin-bottom: 60px;
 }
 
 .product .card{
@@ -353,6 +357,18 @@ input[type="text"]::placeholder {
 .chair_price{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.chair_price p{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 21.33px;
+    color: #0D1B39;
+}
+
+.chair_price i{
+    font-size: 49px;
 }
 
 
