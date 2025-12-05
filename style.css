@@ -230,6 +230,132 @@ input[type="text"]::placeholder {
     color: #E58411;
 }
 
+/* Best product Section */
+
+.best_product{
+    background-color: #F7F7F7;
+    padding: 50px 0px;
+}
+
+.best_product .container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    margin-bottom: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.header h4{
+    font-size: 42px;
+    color: #1E1E1E;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.header .category {
+    background-color: #EEEEEE;
+    border-radius: 44px;
+    padding: 6px;
+    width: fit-content;
+}
+
+.header .category ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .category ul li{
+    list-style: none;
+    padding: 7px 20px;
+    opacity: 80%;
+    font-size: 18px;
+    line-height: 185%;
+    color: #1E1E1E;
+    font-weight: 400;
+}
+
+.header .active{
+  background-color: #FFFFFF;
+  border-radius: 32px;
+  color: #1E1E1E;
+  opacity: 80%;
+  font-size: 18px;
+  line-height: 185%;
+  font-weight: 500;
+}
+
+
+.product{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 42px;
+}
+
+.product .card{
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.image_section{
+    text-align: center;
+    background-color: #FAFAFA;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.image_section img{
+    
+    width: 217px;
+    height: 249px;
+    margin-bottom: 34px;
+    margin-top: -50px;
+
+}
+
+.product_details{
+   padding: 14px 22px 27px;
+}
+
+.chair_name{
+    margin-bottom: 36px;
+}
+
+.chair_name p{
+    color: #8D8D8D;
+    font-family: "Inter", sans-serif;
+    font-size: 16.76px;
+    margin-bottom: 6px;
+}
+
+.chair_name h4{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 21.33px;
+    text-transform: capitalize;
+    color: #0D1B39;
+    margin-bottom: 8px;
+}
+
+.star_icon.product_section{
+    justify-content: flex-start;
+}
+
+.star_icon.product_section i{
+    color: #F6B76F;
+}
+
+.chair_price{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 /* Experience Section */
 
 .experience{
