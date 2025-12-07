@@ -71,6 +71,7 @@
 
 .nav i{
     font-size: 34px;
+    cursor: pointer;
 }
 
 .content{
@@ -113,18 +114,35 @@
     position: relative;
     background-color:rgba(255, 255, 255, 0.15);
     border-radius: 42px;
-    border: .86px solid;
-    border-color: rgba(255, 255, 255, 0.6);
+    
 }
 
 .search-container input{
    width: 100%;
    height: 56px;
    border-radius: 42px;
-   border: none;
+   border: .86px solid;
+   border-color: rgba(255, 255, 255, 0.6);
    padding: 15px 20px;
    background-color: transparent;
+   color: rgba(255, 255, 255, 0.8);
+   font-size: 18px;
+   line-height: 150%;
+   font-weight: 400;
+
 }
+
+.search-container input:focus{
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    height: 56px;
+    border-radius: 42px;
+    border: 1px solid  #E58411;
+    box-shadow: 0 0 4px rgba(23, 207, 151, 0.4);
+    padding: 15px 20px;
+    background-color: transparent;
+ }
 
 input[type="text"]::placeholder {
     color: rgba(255, 255, 255, 0.8);
@@ -132,6 +150,7 @@ input[type="text"]::placeholder {
     line-height: 150%;
     font-weight: 400;
   }
+
 
 .search-container button{
     position: absolute;
@@ -146,6 +165,10 @@ input[type="text"]::placeholder {
     border: none;
     color: white;
     font-size: 18px;
+}
+
+.search-container button:hover{
+    cursor: pointer;
 }
 
 /* About Us Section */
@@ -451,6 +474,7 @@ input[type="text"]::placeholder {
     flex-direction: column;
     gap: 20px;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 .testimonial .header h4{
