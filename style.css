@@ -709,59 +709,37 @@ opacity: 80%;
         display: none;
     }
 
-    
-    .about_us{
-        display: none;
-    }
 
 
-
-/* About Us Section 
-
-.about_us{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+/* About Us Section */
 
 .about_us .container{
-    margin: 60px 20px;
-    display: flex;
+    max-width: 100%;
     flex-direction: column;
-    gap: 130px;
-    justify-content: center;
-    align-items: center;
+    gap: 60px;
+    margin: 60px 25px;
+    align-items: flex-start;
 }
 
 .about_us .left_side{
     max-width: 100%;
+    
 }
 
 .left_side p{
-    font-weight: 600;
-    font-size: 42px;
-    color: #1E1E1E;
-    
+    font-size: 32px; 
+    max-width: 100%;
 }
 
 .right_side{
     display: flex;
     flex-direction: column;
     flex: 1;
-    gap: 28px;
+    gap: 60px;
 }
 
 .card{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 14px;
-}
-
-.card-content{
-    display: flex;
-    flex-direction: column;
+    width: 100%;
     gap: 20px;
 }
 
@@ -778,37 +756,13 @@ opacity: 80%;
     opacity: 80%;
 }
 
-.more_info{
-    display: flex;
-    gap: 13px;
-    justify-content: flex-start;
-    align-items: center;
-
-}
-
-.more_info a{
-    text-decoration: none;
-    color: #E58411;
-    font-size: 18px;
-    line-break: 185%;
-    font-weight: 500;
-}
-
-.more_info i{
-    font-size: 20px;
-    color: #E58411;
-}
-
-*/
 
 
 /* footer section */
 
-
-
 .footer{
     background-color: #F7F7F7;
-    padding: 60px 20px;
+    padding: 60px 25px 20px;
 }
 
 .footer .container{
@@ -848,11 +802,6 @@ opacity: 80%;
 .privacy{
     display: flex;
     justify-content: space-between;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 160%;
-    color: #1E1E1E;
-    opacity: 80%;
 }
 
 }
