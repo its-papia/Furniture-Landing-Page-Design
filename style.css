@@ -693,24 +693,6 @@ opacity: 80%;
 /* Mobile View */
 @media screen and (max-width: 576px){
 
-    .hero{
-        display: none;
-     }
-
-     .best_product{
-        display: none;
-    }
-
-    .experience{
-        display: none;
-    }
-
-    .testimonial{
-        display: none;
-    }
-
-
-
 /* About Us Section */
 
 .about_us .container{
@@ -755,7 +737,6 @@ opacity: 80%;
     line-height: 185%;
     opacity: 80%;
 }
-
 
 
 /* footer section */
