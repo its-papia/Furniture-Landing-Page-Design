@@ -508,7 +508,9 @@ input[type="text"]::placeholder {
     background-position: center;
     background-size: cover;
     border-radius: 18.12px;
-    padding: 219px 18px 18px 18px;
+    padding: 18px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .card2{
@@ -520,31 +522,31 @@ input[type="text"]::placeholder {
 }
 
 .card_container{
-    background-image: url(Asset/Union\ \(4\).png);
-    background-position: center;
-    background-size: cover;
-    height: 239px;
-    border-radius: 10px;
+    background-color: #FFFFFF;
+    height: 206px;
+    border-radius: 18px;
     display: flex;
     flex-direction: column;
     gap: 22px;
-    padding: 8px 40px 17px 40px;
-    justify-content: flex-start;
-    align-items: center;
+    padding: 0px 40px 17px 42px;
     text-align: center;
-
+    justify-content: flex-start;
 }
 
 
 .client_profile{
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 5px;
 }
 
+
 .client_image img{
-    width: 55px;
-    height: 55px;
+  width: 50px;
+  height: 50px;
+  border: 8px solid #FFFFFF;
+  border-radius: 50%;
+  margin-top: -23px;
 }
 
 .client_profile .client_description{
@@ -695,9 +697,40 @@ opacity: 80%;
 /* Mobile View */
 @media screen and (max-width: 576px){
 
-    .hero{
-        display: none;
-    }
+/* Hero Section */
+  
+
+.hero{
+    height: 100vh;
+}
+.nav{
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 0px 25px;
+    gap: 0px;
+}
+
+.nav_link{
+    display: flex;
+    gap: 30px;
+
+}
+
+.nav i{
+    display: none;
+}
+
+.content{
+    max-width: 100%;
+    gap: 35px;
+    padding: 25px;
+
+}
+
+.content h1{
+    font-size: 32px;
+}
 
 
 /* Best product Section */
@@ -712,13 +745,6 @@ opacity: 80%;
     flex-direction: column;
 }
 
-/* .header{
-    margin-bottom: 130px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-} */
 
 .header h4{
     font-size: 32px;
@@ -730,32 +756,6 @@ opacity: 80%;
     padding: 6px; */
     width: 100%;
 }
-
-/* .header .category ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header .category ul li{
-    list-style: none;
-    padding: 7px 20px;
-    opacity: 80%;
-    font-size: 18px;
-    line-height: 185%;
-    color: #1E1E1E;
-    font-weight: 400;
-}
-
-.header .active{
-  background-color: #FFFFFF;
-  border-radius: 32px;
-  color: #1E1E1E;
-  opacity: 80%;
-  font-size: 18px;
-  line-height: 185%;
-  font-weight: 500;
-} */
 
 
 .product{
@@ -899,7 +899,7 @@ opacity: 80%;
 .about_us .container{
     max-width: 100%;
     flex-direction: column;
-    gap: 60px;
+    gap: 50px;
     margin: 60px 25px;
     align-items: flex-start;
 }
@@ -938,6 +938,41 @@ opacity: 80%;
     line-height: 185%;
     opacity: 80%;
 }
+
+
+/* Testimonial Section */
+
+.testimonial{
+    margin: 60px 25px;
+    gap: 50px;
+   
+}
+
+.testimonial .container{
+    gap: 50px;
+}
+
+.testimonial .header{
+    max-width: 100%;
+    gap: 20px;
+    text-align: center;
+}
+
+.testimonial .header h3{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.client_card_container{
+    flex-direction: column;
+    gap: 30px;
+}
+
+.client_card{
+    max-width: 100%;
+    height: 410px;
+}
+
 
 
 /* footer section */
@@ -990,13 +1025,223 @@ opacity: 80%;
 
 /* Tablet View */
 @media screen and (min-width: 576.01px) and (max-width: 992px){
-    .footer_content{
-        display: grid;
-        grid-template-columns: auto auto ;
-        gap: 80px;
-    }
+
+/* Hero Section */
+  
+
+.hero{
+    height: 100vh;
+}
+.nav{
+
+    width: 100%;
+    max-width: 100%;
+    padding: 0px 40px;
+    gap: 0px;
+}
+
+.nav_link{
+    display: flex;
+    gap: 50px;
+
+}
+
+.nav i{
+    display: none;
+}
+
+.content{
+    max-width: 80%;
+    gap: 35px;
+
+}
+
+.content h1{
+    font-size: 60px;
+}
+
+    
+/* Best product Section */
+
+.best_product{
+    padding: 70px 40px;
+}
+
+.product{
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    row-gap: 80px;
+    margin-bottom: 30px;
+}
+
+
+/* Experience Section */
+
+.experience{
+    padding: 70px 40px;
+}
+
+.experience .container{
+    gap: 40px;
+
+}
+
+.experience .left{
+    width: 50%;
+}
+.experience img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.experience .right{
+    width: 50%;
+    padding-top: 10px;
+    gap: 20px;
+}
+
+.experience .text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience .text h4{
+    font-size: 14px;
+}
+
+.experience .text h3{
+    font-size: 32px;
+}
+
+.experience .text p{
+    font-size: 16px;
+}
+
+/* About Us Section */
+
+.about_us .container{
+    max-width: 100%;
+    flex-direction: column;
+    gap: 50px;
+    margin: 70px 40px;
+    align-items: center;
+}
+
+.about_us .left_side{
+    max-width: 100%;
     
 }
+
+.left_side p{
+    font-size: 42px; 
+    max-width: 100%;
+}
+
+.right_side{
+    display: flex;
+    flex: 1;
+    gap: 40px;
+}
+
+.card{
+    width: 100%;
+    gap: 20px;
+}
+
+.card-content .title{
+    color: #1E1E1E;
+    font-size: 24px;
+    opacity: 90%;
+}
+
+.card-content .text{
+    color: #1E1E1E;
+    font-size: 16px;
+    line-height: 185%;
+    opacity: 80%;
+}
+
+/* Testimonial Section */
+
+.testimonial{
+    margin: 70px 40px;
+    gap: 50px;
+   
+}
+
+.testimonial .container{
+    gap: 50px;
+}
+
+.testimonial .header{
+    max-width: 100%;
+    gap: 20px;
+    text-align: center;
+}
+
+.testimonial .header h3{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.client_card_container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+
+.client_card{
+    max-width: 100%;
+    height: 410px;
+}
+
+/* footer section */
+
+.footer{
+    background-color: #F7F7F7;
+    padding: 70px 40px;
+}
+
+
+.footer .container{
+    gap: 50px;
+}
+
+
+.footer_content{
+    gap: 60px;
+}
+
+.logos_about{
+    margin-right: 0px;
+    max-width: 450px;
+}
+
+.logos_about h4{
+    margin-bottom: 20px;
+}
+
+.term_condition{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.copyright{
+   margin-bottom: 20px;
+}
+
+.privacy{
+    display: flex;
+    justify-content: space-between;
+}
+
+}
+
 
 
 
