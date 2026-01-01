@@ -21,29 +21,34 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+
+<script src="main.js" defer></script>
 
 </head>
 <body>
 
     <!--Hero Section-->
     <section class="hero">
-        <div class="nav">
-            <h2>Panto</h2>
-            <div class="nav_link" id="menulist">
-                <a href="#">Furniture</a>
-                <a href="#">Shop</a>
-                <a href="#">About Us</a>
-                <a href="#">Contact</a>
-            </div>
-            
-            <div class="menu">
-                <i class="fa-solid fa-bars" id="open"  onclick="openMenu()"></i>
-                <i class="fa-solid fa-xmark" id="close" onclick="closeMenu()"></i>
-            </div>
-           
 
+        <div class="navcontainer">
+            <div class="nav">
+                <h2>Panto</h2>
+                <div class="nav_link" id="menulist">
+                    <a href="#">Furniture</a>
+                    <a href="#">Shop</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                </div>
+                
+                <div class="menu">
+                    <i class="fa-solid fa-bars" id="open"  onclick="openMenu()"></i>
+                    <i class="fa-solid fa-xmark" id="close" onclick="closeMenu()"></i>
+                </div>
+               
+            </div>
         </div>
+       
         <div class="content">
          <div class="content_text">
 
@@ -405,7 +410,7 @@
 
     </div>
 
-    <script>
+    <!-- <script>
     
         let menulist = document.getElementById("menulist");
         let open = document.getElementById("open");
@@ -424,7 +429,7 @@
             open.style.display = "block";
             close.style.display = "none";
             nav.classList.remove("menu_open");
-        }
+        } -->
 
     </script>
 
