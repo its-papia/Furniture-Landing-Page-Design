@@ -1,5 +1,7 @@
 # Furniture Landing Page Design
 
+![Furniture Landing Page Thumbnail](./assets/Thumbnail.png)
+
 A modern and responsive furniture landing page built with **HTML, CSS, and JavaScript**.
 
 🌐 **Live Demo:**  
