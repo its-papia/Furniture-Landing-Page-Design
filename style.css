@@ -41,11 +41,13 @@
 }
 .nav{
     display: flex;
+    width: 100%;
     max-width: 1280px;
     color: white;
     justify-content: space-between;
     margin: 40px auto 80px auto;
-    gap: 335px;
+    padding: 0px 40px;
+    /* gap: 335px; */
 }
 
 .nav p{
@@ -70,8 +72,12 @@
 }
 
 .nav i{
-    font-size: 34px;
+    font-size: 32px;
     cursor: pointer;
+}
+
+.nav .menu {
+    display: none;
 }
 
 .content{
@@ -318,9 +324,10 @@ input[type="text"]::placeholder {
 
 
 .product{
+    width: 100%;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 42px;
+    gap: 30px;
     margin-bottom: 60px;
 }
 
@@ -522,7 +529,8 @@ input[type="text"]::placeholder {
 }
 
 .card_container{
-    background-color: #FFFFFF;
+    background-color:#ffffff;
+    width: 100%;
     height: 206px;
     border-radius: 18px;
     display: flex;
@@ -695,29 +703,41 @@ opacity: 80%;
 }
 
 /* Mobile View */
-@media screen and (max-width: 576px){
+@media screen and (max-width: 790px){
 
 /* Hero Section */
   
-
 .hero{
     height: 100vh;
 }
+
 .nav{
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
     padding: 0px 25px;
     gap: 0px;
+    overflow: hidden;
 }
 
 .nav_link{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
     display: flex;
-    gap: 30px;
-
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    display: none;
+    z-index: 20;
 }
 
-.nav i{
+.nav .menu{
+    display: block;
+}
+
+#close{
     display: none;
 }
 
@@ -1024,43 +1044,18 @@ opacity: 80%;
 }
 
 /* Tablet View */
-@media screen and (min-width: 576.01px) and (max-width: 992px){
+@media screen and (min-width: 790.01px) and (max-width: 1250px){
 
 /* Hero Section */
   
-
-.hero{
-    height: 100vh;
-}
-.nav{
-
-    width: 100%;
-    max-width: 100%;
-    padding: 0px 40px;
-    gap: 0px;
-}
-
-.nav_link{
-    display: flex;
-    gap: 50px;
-
-}
-
-.nav i{
-    display: none;
-}
-
-.content{
-    max-width: 80%;
-    gap: 35px;
-
-}
+/* .hero{
+    height: ;
+} */
 
 .content h1{
-    font-size: 60px;
+    font-size: 62px;
 }
-
-    
+ 
 /* Best product Section */
 
 .best_product{
@@ -1069,11 +1064,9 @@ opacity: 80%;
 
 .product{
     grid-template-columns: auto auto auto;
-    column-gap: 30px;
     row-gap: 80px;
     margin-bottom: 30px;
 }
-
 
 /* Experience Section */
 
@@ -1169,7 +1162,6 @@ opacity: 80%;
 .testimonial{
     margin: 70px 40px;
     gap: 50px;
-   
 }
 
 .testimonial .container{
@@ -1201,7 +1193,6 @@ opacity: 80%;
 /* footer section */
 
 .footer{
-    background-color: #F7F7F7;
     padding: 70px 40px;
 }
 
@@ -1222,22 +1213,6 @@ opacity: 80%;
 
 .logos_about h4{
     margin-bottom: 20px;
-}
-
-.term_condition{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.copyright{
-   margin-bottom: 20px;
-}
-
-.privacy{
-    display: flex;
-    justify-content: space-between;
 }
 
 }
